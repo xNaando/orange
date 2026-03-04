@@ -814,8 +814,11 @@
     }
 
     /* ─── RESPONSIVE ─── */
+    .nav-cta-mobile { display: none; text-decoration: none; }
+
     @media (max-width: 768px) {
       .nav-links { display: none; }
+      .nav-cta-mobile { display: inline-flex; }
       .custom-inner { grid-template-columns: 1fr; gap: 40px; }
       .custom-visual { display: none; }
       .hero-buttons { flex-direction: column; align-items: center; }
@@ -842,6 +845,7 @@
     <li><a href="#trafego">Tráfego Pago</a></li>
     <li><a href="https://wa.me/5531972648112" target="_blank" class="nav-cta">Fale Conosco</a></li>
   </ul>
+  <a href="https://wa.me/5531972648112" target="_blank" class="nav-cta nav-cta-mobile">Fale Conosco</a>
 </nav>
 
 <!-- ─── HERO ─── -->
